@@ -1,0 +1,26 @@
+package com.assignment;
+
+import java.util.Scanner;
+
+public class BothSideStars {
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter maxm odd number to be printed");
+		int input = scan.nextInt();
+		if(input%2 == 0){
+			System.out.println("Incorrect input, please enter an odd input");
+		}
+		else{
+			for(int i =1; i<= input;i++){
+				for(int j = input -1; j >=i;j-- ){
+					for( int k = 1; k<= 2*i-1; k++){
+						if(i == input)
+							System.out.print("*");
+					}
+				}
+			}
+		}
+	}
+
+}

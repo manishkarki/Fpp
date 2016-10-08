@@ -1,0 +1,23 @@
+package com.assignment;
+
+import java.util.Scanner;
+
+public class ReversePattern {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the maxm no of stars");
+		int input = scan.nextInt();
+		for(int i =0; i<input; i++){
+			for(int j =0; j<input; j++){
+				if(i == input-1 )
+					System.out.print("*");
+				else if(j == input-i-1 || j == input-1)
+					System.out.print("x");
+				else
+					System.out.print(" ");
+			}
+			System.out.println("");
+		}
+	}
+
+}

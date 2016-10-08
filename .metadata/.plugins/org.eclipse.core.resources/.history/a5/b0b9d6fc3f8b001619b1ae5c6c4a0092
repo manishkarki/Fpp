@@ -1,0 +1,71 @@
+package com.assignment.Lesson3;
+
+import java.util.ArrayList;
+
+public class Position {
+
+	private String title;
+	private String description;
+	private Employee emp;
+	Position superior;
+	ArrayList<Position> inferior;
+
+	public Position(String title, String description) {
+		setTitle(title);
+		setDescription(description);
+		inferior = new ArrayList<Position>();
+	}
+
+	public void print() {
+		System.out.println("\t\t" + "Title:" + getTitle() + "\t" + "Description:" + getDescription());
+		if (emp != null)
+			emp.print();
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public double getSalary() {
+		double salaryTotal = 0;
+		salaryTotal += emp.getSalary();
+		return salaryTotal;
+	}
+
+	public Employee getEmp() {
+		return emp;
+	}
+
+	public void setEmp(Employee emp) {
+		this.emp = emp;
+	}
+	
+	public void addInferior(Position pos){
+//		System.out.println("added:"+pos.getDescription());
+		this.inferior.add(pos);
+	}
+	
+	public void printDownLine(){
+		int count = 0;
+		System.out.println("<_____Hierarchy____> ");
+		for(Position pos : inferior){
+			System.out.print(pos.getEmp().getfName()+" works for "+this.getEmp().getfName());
+			count ++;
+			if(count!=0 && count <(inferior.size()-1)){
+				System.out.print(",");
+			}
+		}
+	}
+}

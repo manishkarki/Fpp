@@ -1,0 +1,48 @@
+package com.assignment;
+
+import java.util.Scanner;
+
+public class StarB {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);  
+		System.out.println("Enter any Number");
+		int n=sc.nextInt();
+		int spaceBefor=n-1;
+		int spaceAfter=0;
+		for(int i=0;i<n;i++) 
+		{
+			if(i==0 || i==n-1)
+			{
+				for(int j=spaceBefor;j>0;j--)
+				{
+					System.out.print(" ");
+				}
+				spaceBefor--;
+				for(int k=0;k<=i;k++)
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+			else
+			{
+				for(int j=spaceBefor;j>0;j--)
+				{
+					System.out.print(" ");
+				}
+				spaceBefor--;
+				System.out.print("*");
+				for(int l=0;l<spaceAfter;l++)
+				{
+					System.out.print(" ");
+				}
+				spaceAfter++;
+				System.out.print("*");
+				System.out.println();
+			}
+		}
+
+	} 
+}
+

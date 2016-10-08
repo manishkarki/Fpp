@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.assignment.Main"/>
+<fullyQualifiedTypeName name="com.assignment.day3.Account"/>
+<fullyQualifiedTypeName name="com.assignment.day3.AccountType"/>
+<fullyQualifiedTypeName name="com.assignment.AccountType"/>
+<fullyQualifiedTypeName name="com.assignment.Account"/>
+<fullyQualifiedTypeName name="com.week1.lesson5.Professor"/>
+<fullyQualifiedTypeName name="com.week1.lesson5.Secretary"/>
+<fullyQualifiedTypeName name="com.week1.lesson5.DeptEmployee"/>
+<fullyQualifiedTypeName name="com.lesson3.PairOfDice"/>
+<fullyQualifiedTypeName name="java.time.Period"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.lesson3.HeartRate"/>
+<fullyQualifiedTypeName name="com.lesson3.Main"/>
+<fullyQualifiedTypeName name="com.lesson3.SavingsAccount"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="com.assignment.day3.Employee"/>
+<fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+<fullyQualifiedTypeName name="com.practice1.RemoveDuplicatesLinkedList"/>
+<fullyQualifiedTypeName name="java.util.ConcurrentModificationException"/>
+<fullyQualifiedTypeName name="java.util.PriorityQueue"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.assignment.day3.Main"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="com.assignment.Lesson3.Company"/>
+<fullyQualifiedTypeName name="com.assignment.Lesson3.Department"/>
+<fullyQualifiedTypeName name="com.assignment.Lesson3.Position"/>
+<fullyQualifiedTypeName name="com.assignment.Lesson3.Employee"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+</qualifiedTypeNameHistroy>

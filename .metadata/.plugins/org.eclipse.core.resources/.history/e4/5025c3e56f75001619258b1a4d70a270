@@ -1,0 +1,30 @@
+package com.assignment;
+
+import java.util.Scanner;
+
+public class BothSideStars {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter maxm odd number to be printed");
+		int input = scan.nextInt();
+		if (input % 2 == 0) {
+			System.out.println("Incorrect input, please enter an odd input");
+		} else {
+			for (int i = 1; i <= input; i++) {
+				for(int j= 0; j<= (input-1)/2; j++){
+					if(j == (input-i-1)/2)
+						System.out.print("*");
+					else
+						System.out.print(" ");
+					for(int k=(input-1)/2; k< input; k++){
+						if(i == input-1)
+							System.out.print("*");
+						else if()
+					}
+				}
+			}
+		}
+	}
+
+}

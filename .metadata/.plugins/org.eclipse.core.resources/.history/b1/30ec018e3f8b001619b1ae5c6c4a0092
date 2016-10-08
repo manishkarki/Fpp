@@ -1,0 +1,44 @@
+package com.assignment.Lesson3;
+
+import java.util.GregorianCalendar;
+
+public class Lesson3Main {
+
+	public static void main(String[] args) {
+		Company comp = new Company("Microsoft");
+		Department finance = new Department("Finance", "2nd St");
+		Department development = new Department("RND", "3rd Avenue");
+		comp.addDepartment(finance);
+		comp.addDepartment(development);
+		Position financeOfficer = new Position("finance officer", "manage finances");
+		Position financeManager = new Position("finance Manager", "executes & manages finances");
+		Position financeExecutive = new Position("finance Executive", "controls finances");
+		financeExecutive.addInferior(financeManager);
+		financeExecutive.addInferior(financeOfficer);
+		finance.addPosition(financeExecutive);
+		finance.addPosition(financeManager);
+		finance.addPosition(financeOfficer);
+		Position programmer = new Position("programmer", "writes program");
+		Position seniorDeveloper = new Position("senior Developer", "Monitors Junior");
+		Position ProjectManager = new Position("Project Manager", "manages Projects");
+		development.addPosition(ProjectManager);
+		development.addPosition(seniorDeveloper);
+		development.addPosition(programmer);
+		Employee manish = new Employee("Pm1", "Manish", "", "Karki", new GregorianCalendar(1992, 06, 17), "456-567", 150000);
+		Employee nilam = new Employee("sd2", "Nilam", "maal", "Dahal", new GregorianCalendar(1991, 07, 1), "456-565", 130000);
+		Employee gyanendra = new Employee("pro2", "Gyanendra", "", "Ghimire", new GregorianCalendar(1991, 13, 10), "406-567", 120000);
+		Employee asutosh = new Employee("fo2", "Asutosh", "", "Ghimire", new GregorianCalendar(1982, 03, 17), "156-507", 120000);
+		Employee krishna = new Employee("fm2", "Krishna", "", "Bhatt", new GregorianCalendar(1988, 9, 7), "136-567", 130000);
+		Employee prajil = new Employee("fe2", "Prajil", "", "Shrestha", new GregorianCalendar(1991, 06, 10), "2346-567", 150000);
+		ProjectManager.setEmp(manish);
+		seniorDeveloper.setEmp(nilam);
+		programmer.setEmp(gyanendra);
+		financeOfficer.setEmp(asutosh);
+		financeManager.setEmp(krishna);
+		financeExecutive.setEmp(prajil);
+		comp.print();
+		System.out.println();
+		financeExecutive.printDownLine();
+		System.out.println("Salary total:"+comp.getSalary());
+	}
+}
